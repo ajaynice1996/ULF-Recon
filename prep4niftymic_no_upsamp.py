@@ -14,6 +14,7 @@
 #     pairwise overlap
 #     NiftyMIC readiness
 # =============================================================================
+
 import os
 import numpy as np
 import nibabel as nib
