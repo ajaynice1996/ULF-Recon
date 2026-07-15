@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "src",
+			"path": "../../R21_pipeline/src"
+		},
+		{
+			"name": "ULF-Recon",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
