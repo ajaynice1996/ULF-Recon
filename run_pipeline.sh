@@ -65,6 +65,28 @@ antsRegistrationSyN.sh \
 echo "Registration completed"
 
 
+############################
+# 2.5 Save registered atlas image
+############################
+
+echo "Creating registered atlas T2 image for QC"
+
+
+docker run --rm \
+-v $(pwd):/data \
+${DOCKER_IMAGE} \
+antsApplyTransforms \
+-d 3 \
+-i /data/atlas_pipeline/atlas/nihpd_asym_04.5-08.5_t2w.nii \
+-r /data/atlas_pipeline/input/${SUBJECT} \
+-o /data/atlas_pipeline/output/atlas_T2_registered.nii.gz \
+-n Linear \
+-t /data/atlas_pipeline/output/reg_1Warp.nii.gz \
+-t /data/atlas_pipeline/output/reg_0GenericAffine.mat
+
+
+echo "Registered atlas saved"
+
 
 ############################
 # 3. Transform atlas images
