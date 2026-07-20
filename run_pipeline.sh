@@ -48,9 +48,8 @@ PrintHeader /data/atlas_pipeline/atlas/nihpd_asym_04.5-08.5_t2w.nii
 # 2. Registration
 ############################
 
-
+s
 echo "Running ANTs SyN registration..."
-
 
 docker run --rm \
 -v $(pwd):/data \

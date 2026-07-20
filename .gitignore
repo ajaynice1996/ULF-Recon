@@ -223,3 +223,12 @@ __marimo__/
 
 DataSRR/*
 .DS_Store
+
+
+Psilocybin/
+psilo-data/
+atlas_pipeline/details.txt
+atlas_pipeline/output_fs/
+USLR/
+.venv-uslr/
+
