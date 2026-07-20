@@ -60,9 +60,7 @@ antsRegistrationSyN.sh \
 -m /data/atlas_pipeline/atlas/nihpd_asym_04.5-08.5_t2w.nii \
 -o /data/atlas_pipeline/output/reg_
 
-
 echo "Registration completed"
-
 
 ############################
 # 2.5 Save registered atlas image
